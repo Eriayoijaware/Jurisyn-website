@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Jurisyn</title>
+<link rel="stylesheet" href="Jurisyn.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<header class="nav">
+    <div class="nav-inner">
+       <div class="logo">
+    <a href="index.html" class="logo-text">Juri<span>syn</span></a>
+</div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero section">
+    <div class="container hero-inner">
+        <h1>Get In Touch</h1>
+        <p>Ready for GDPR compliance? Let's discuss your needs.</p>
+    </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="section">
+    <div class="container narrow">
+        <form class="contact-form" action="https://formspree.io/f/xyklgjdj" >
+    <input type="hidden" name="_subject" value="New Jurisyn Inquiry!"/> 
+            <div class="grid-2">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            
+            <div class="grid-2">
+                <div>
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </div>
+            
+            <label for="service">Interested In</label>
+            <select id="service" name="service" required>
+                <option value="">Select service...</option>
+                <option value="essentials">GDPR Essentials ($250)</option>
+                <option value="comprehensive">GDPR Comprehensive ($500)</option>
+                <option value="multi"> Enterprise & Multi-Region</option>
+            </select>
+            
+            <label for="message">Tell us about your needs</label>
+            <textarea id="message" name="message" rows="6" placeholder="e.g. We're a fintech startup with EU customers..." required></textarea>
+            
+            <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- CONTACT INFO -->
+<section class="section">
+    <div class="container">
+        <h2>Or Reach Me Directly</h2>
+        <div class="grid-3" style="gap: 2rem;">
+            <div class="card">
+                <h3>Email</h3>
+                <p>busolaijaware@gmail.com</p>
+            </div>
+            <div class="card">
+                <h3>Phone</h3>
+                <p>+234-703-994-4415</p>
+            </div>
+            <div class="card">
+    <h3>WhatsApp</h3>
+    <p>
+        <a href="https://wa.me/2347039944415" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">
+            Click to chat →
+        </a>
+    </p>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Jurisyn. Response within 24 hours.</p>
+    </div>
+</footer>
+
+<style>
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.contact-form input, .contact-form select, .contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--neutral-200);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+  margin-bottom: 1.5rem;
+  background: var(--glass-bg);
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+</body>
+</html>
