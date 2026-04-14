@@ -427,6 +427,22 @@ h2 {
 .logo-text::after {
     content: '';
     width: 6px;
+  /* This targets mobile screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .nav-list { /* Change .nav-list to whatever your class name is */
+    display: flex;
+    flex-direction: column; /* Stacks the links vertically */
+    gap: 15px; /* Adds space between the links */
+    padding: 20px;
+    background: #1a1a2e; /* Matches your violet/dark theme */
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 0; /* Clears any desktop margins that are pushing things off-center */
+  }
+}
+  
     height: 6px;
     background: var(--accent);
     border-radius: 50%;
